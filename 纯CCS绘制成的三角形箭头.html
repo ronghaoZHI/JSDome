@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>纯CCS绘制成的三角形箭头</title>
+<style type="text/css">
+*div{ position:absolute;}
+/* create an arrow that points up */
+div.arrow-up { margin-left:75%; margin-top:-50px;
+	width: 0; 
+	height: 0; 
+	border-left: 50px solid transparent;  /* left arrow slant */
+	border-right: 50px solid transparent; /* right arrow slant */
+	border-bottom: 50px solid #2f2f2f; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+
+/* create an arrow that points down */
+div.arrow-down { margin-left:55%; margin-top:-70px;
+	width: 0; 
+	height: 0; 
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 50px solid #2f2f2f;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* create an arrow that points left */
+div.arrow-left { margin-left:15%; 
+	width: 0; 
+	height: 0; 
+	border-bottom: 50px solid transparent;  /* left arrow slant */
+	border-top: 50px solid transparent; /* right arrow slant */
+	border-right: 50px solid #2f2f2f; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+
+/* create an arrow that points right */
+div.arrow-right { margin-left:35%; margin-top:-100px;
+	width: 0; 
+	height: 0; 
+	border-bottom: 50px solid transparent;  /* left arrow slant */
+	border-top: 50px solid transparent; /* right arrow slant */
+	border-left: 50px solid #2f2f2f; /* bottom, add background color here */
+	font-size: 0;
+	line-height: 0;
+}
+
+</style>
+</head>
+
+<body>
+<div class="arrow-left"></div>
+<div class="arrow-right"></div>
+<div class="arrow-down"></div>
+<div class="arrow-up"></div>
+</body>
+</html>

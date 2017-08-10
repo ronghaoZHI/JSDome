@@ -1,0 +1,30 @@
+﻿.egg {
+    width: 158px;
+    height: 187px;
+    background-image: url("../img/egg_1.png");
+    float: left;
+    margin-right: 30px;
+       cursor:pointer;
+}
+
+#eggs {
+    height: 187px;
+    width: 780px;
+    position:absolute;
+    top:200px;
+    left:100px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+#t {
+    width:74px;
+    height:87px;
+    background-image:url("../img/egg_3.png");
+    position:absolute;
+   left:212px;
+   top:173px;
+   cursor:pointer;
+}
