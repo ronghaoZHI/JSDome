@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html manifest="dn.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,use-scalable=on">
+
+    <title>加载斗牛</title>
+    <style type="text/css">
+        html{
+            height: 100%;
+            background-image: url("images/bg.png");
+            text-align: center;
+        }
+        #game_name{
+            font-size: 30px;
+            top:40%;
+            position: absolute;
+            text-align: center;
+
+            left: 0px;
+            right: 0px;
+
+        }
+        ul{
+            padding: 0px;
+            list-style: none;
+            text-align: center;
+            display: block;
+            margin:0px;
+
+        }
+        ul li{
+            width: 10px;
+            height: 10px;
+            background-color: #000000;
+            box-shadow: 0px 1px 0px rgba(0,0,0,0,5);
+            display: inline-block;
+            border-radius: 50%;
+            margin: 0 4px;
+            -webkit-animation:loading 2s infinite;
+            -webkit-animation-fill-mode:both;
+        }
+        .info{
+            display: inline-block;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+
+
+
+        }
+        @-webkit-keyframes loading{
+            0%{
+                -webkit-transform:translateX(-30px);opacity: 0;
+            }
+            25%{
+                opacity: 1;
+            }
+            50%{
+                -webkit-transform:translateX(30px);opacity: 0;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+        ul li:nth-child(6){-webkit-animation-delay:0s;}
+        ul li:nth-child(5){-webkit-animation-delay:0.2s;}
+        ul li:nth-child(4){-webkit-animation-delay:0.4s;}
+        ul li:nth-child(3){-webkit-animation-delay:0.6s;}
+        ul li:nth-child(2){-webkit-animation-delay:0.8s;}
+        ul li:nth-child(1){-webkit-animation-delay:1.0s;}
+    </style>
+</head>
+<body onload="load()">
+<div id="game_name">
+    <div class="info">斗牛</div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+    </ul>
+    <div class="info" style="font-size: 18px;color: #ffff00;">
+        (无毒 不耗流量 仅仅0.2M)
+    </div><br/>
+    <div class="info" style="font-size: 20px">检查更新中，精彩马上呈现····</div>
+</div>
+
+</body>
+<script type="text/javascript">
+    document.addEventListener("touchmove",function(e){
+        e.preventDefault();
+    },false);
+    function load(){
+        setTimeout(function(){
+            window.location.href="dn.html";
+        },3000);
+
+    }
+
+</script>
+</html>

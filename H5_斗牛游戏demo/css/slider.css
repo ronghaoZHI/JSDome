@@ -1,0 +1,76 @@
+#main{
+    margin: 40px;
+    position: absolute;
+    top:-314px;
+    left: -96px;
+}
+
+#betNum{
+    position: absolute;
+    background: url('../images/sliderbar/slider_bartop_v.png');
+    left: 41px;
+    top:-5px;
+    width: 126px;
+    height: 41px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slider {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 24px;
+    width: 320px;
+    background: url('../images/sliderbar/slide_bar.png');
+    border-style: none;
+    left: 0;
+}
+
+
+.slider > div:last-child{
+    height: 54px;
+    width: 87px;
+    background: url("../images/sliderbar/slide_hand.png");
+    border-style: none;
+    top: -18px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    -webkit-transition-duration: 0ms;
+}
+
+.slider_v {
+    margin: 36px;
+    width: 136px;
+    height: 320px;
+    padding: 0;
+    background: url('../images/sliderbar/slide_bar_v.png');
+    border-style: none;
+    position: relative;
+}
+
+
+.slider_v div:last-child{
+    width: 54px;
+    height: 87px;
+    background: url("../images/sliderbar/slide_hand_v.png");
+    border-style: none;
+    top: 0px;
+    left: 42px;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+
+

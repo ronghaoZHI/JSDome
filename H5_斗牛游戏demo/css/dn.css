@@ -1,0 +1,878 @@
+html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-image: url("../images/bg.png");
+    max-width: 100%;
+    max-height: 100%;
+    margin:0 auto ;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.page{
+    display: none;
+}
+#qh_login_reg{
+
+    height: 100%;
+    margin-top: 35px;
+    display: block;
+}
+
+#qh_product_l{
+    bottom: 18%;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 10%;
+    display:block;
+}
+#qh_product_r{
+    bottom: 18%;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 10%;
+    display:none;
+
+}
+nav{
+    height: 60px;
+    line-height: 60px;
+}
+.qhIcon{
+    width: 55px;
+    height: 55px;
+    background-position: 0px 0px;
+    position: relative;
+    top: 16px;
+    left: 16px;
+
+}
+.game_name{
+    position: relative;
+    top: -52px;
+    left: 80px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.productCenter{
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-bottom: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline-block;
+}
+hr{
+    margin:0;
+    height: 0;
+    clear: both;
+    border-bottom: 5px;
+    border-width: 0;
+    border-top: 1px solid #555;
+    border-color: rgba(255,255,255,0.2);
+    box-shadow: 0px -1px 0px rgba(0,0,0,0.5);
+
+
+}
+#qh_product_l hr{
+    position: relative;
+    top: -67px;
+    left: 80px;
+    width: 268px;
+
+
+}
+.MPADesc{
+    position: relative;
+    top: -93px;
+    left: 84px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: Arial;
+}
+._h{
+    padding: 1.8em 1em;
+}
+p{
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+}
+.qhInput{
+    width: 60%;
+    font-size: 24px;
+    height: 48px;
+    outline: 0;
+    padding: 9px;
+    border-radius: 10px;
+    -moz-background-origin: 2px;
+    border: 0px;
+}
+.lr_button{
+    width: 15%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 2px;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#F37737),to(#F37737));
+}
+#user_login{
+    text-align: center;
+    top: 30px;
+    position: relative;
+    width: 100%;
+
+
+}
+#user_login > div{
+    background-color: rgba(0,0,0,0,3);
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    margin:0px 20px;
+}
+#res_login > div{
+    background-color: rgba(0,0,0,0,3);
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    margin:0px 20px;
+
+}
+.lr_btn{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    font-size: 12px;
+    color: #D5CECE;
+}
+.btns{
+    background: -webkit-gradient(linear,0,0,100%,from(#0071d0),to(#005eac));
+    height: 48px;
+    color: #fff;
+    border: 1px solid #065392;
+    margin-left: 0px;
+    border-radius: 10px;
+    /*-webkit-box-shadow:inset rgb*/
+
+
+}
+.jb{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-image: url("../images/bgjianbian.png");
+    background-size: 100% 100%;
+    z-index: -100;
+}
+#qh_login_reg hr{
+    position: relative;
+    top: -67px;
+    left: 80px;
+    width: 268px;
+
+}
+#return_login{
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 1;
+    width: 135px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 20px;
+}
+/*加载页面动画*/
+.animated{
+    /*-webkit-animated-fill-mode:both;*/
+    /*animated-fill-mode:both;*/
+    animation-duration:0.5s;
+    -webkit-animation-duration:0.7s;
+
+}
+.bounceIn{
+    -webkit-animation-name:bounceIn;
+    animation-name:bounceIn;
+}
+@-webkit-keyframes bounceIn{
+    0%{opacity: 0;-webkit-transform:scale(.3)}
+    50%{opacity: 1;-webkit-transform:scale(1.05)}
+    70%{-webkit-transform:scale(.9)}
+    100%{-webkit-transform:scale(1)}
+}
+.bounceOut{
+    -webkit-animation-name:bounceOut;
+    animation-name:bounceOut;
+}
+@-webkit-keyframes bounceOut{
+    0%{opacity: 0;-webkit-transform:scale(1)}
+    50%{opacity: 1;-webkit-transform:scale(.95)}
+    70%{-webkit-transform:scale(1.1)}
+    100%{-webkit-transform:scale(.3)}
+}
+/*动画结束*/
+/*大厅界面
+*/
+#qh_join_game{
+    width: 100%;
+    height: 100%;
+}
+.userInfo{
+    position: relative;
+    left: 0px;
+    top: 5px;
+    color: #ffffff;
+    width: 200px;
+}
+#indexPage_header{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 65px;
+    border: 0px;
+    -webkit-border-radius: 30px;
+
+}
+#indexPage_username{
+    position: absolute;
+    top: 18px;
+    left: 80px;
+    font-weight: bold;
+}
+/*头部*/
+#qh_header{
+    position: relative;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+
+}
+/*中间*/
+#qh_game_content{
+    position: absolute;
+    top: 100px;
+    bottom: 70px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+
+}
+#qh_game_content .qh_place{
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: 48%;
+    text-align: center;
+}
+#qh_game_content .qh_place .pt,.pb{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+}
+#qh_game_content .game_breakout1{
+     position: absolute;
+     left: 10px;
+     top: 10px;
+     right: 10px;
+    cursor: pointer;
+     background-color: #388E8E;
+     bottom: 10px;
+ }
+#qh_game_content .game_breakout2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color:#708090;
+    bottom: 10px;
+}
+#qh_game_content .game_breakout3{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color:firebrick;
+    bottom: 10px;
+}
+#qh_game_content .game_breakout4{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color:#8B6914;
+    bottom: 10px;
+}
+#qh_game_content .place_icon{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    border: 4px solid #ffffff;
+    font-size: 40px;
+    color: #ffff00;
+    display: inline-block;
+
+}
+/*文字样式*/
+#font{
+    position: absolute;
+    top:40px;
+    left:230px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#font_l{
+    position: absolute;
+    top:80px;
+    left: 180px;
+    font-weight: bold;
+    font-size: 20px;
+    color:#ffffff;
+    text-align: left;
+}
+#font_q{
+    position: absolute;
+    top:40px;
+    left:230px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+#font_w{
+    position: absolute;
+    top:80px;
+    left: 180px;
+    font-weight: bold;
+    font-size: 20px;
+    color:#ffffff;
+    text-align: left;
+}
+#font_e{
+    position: absolute;
+    top:40px;
+    left:200px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#font_r{
+    position: absolute;
+    top:80px;
+    left: 150px;
+    font-weight: bold;
+    font-size: 20px;
+    color:#ffffff;
+    text-align: left;
+}
+#font_t{
+    position: absolute;
+    top:40px;
+    left:230px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+}
+
+#font_y{
+    position: absolute;
+    top:80px;
+    left: 180px;
+    font-weight: bold;
+    font-size: 20px;
+    color:#ffffff;
+    text-align: left;
+}
+
+/*尾部*/
+#qhFooter{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.qh_money{
+    position: absolute;top: 49px;left: 94px;border-radius: 15px;
+    text-align: left;font-weight: bold;padding-left: 3px;
+    padding-right: 5px;
+    color:gold;
+}
+#quickStart{
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 17px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 45px;
+    color: #ffffff;
+
+}
+#indexPage_home{
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    cursor: pointer;
+    line-height: 53px;
+    font-size: 22px;
+    color: #ffffff;
+}
+/*底部布局*/
+#qhFooter .box{
+    position: relative;
+    -webkit-box-flex:1;
+    margin:10px;
+    color: #ffffff;
+    text-align: center;
+
+}
+.menuIcon{
+    position: relative;
+    top: 10px;
+
+}
+/*大厅界面结束*/
+/*打牌界面*/
+#dnIndexPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#header{
+    width: 100%;
+    position: absolute;
+}
+#gameMain{
+    width: 60px;
+    height: 90px;
+    position: absolute;
+    right: 5%;
+    color: #ffffff;
+
+}
+#gameMain span{
+    position: absolute;
+    top:50px;
+    width: 40px;
+    left: 22px;
+}
+.card{
+    width: 60px;
+    height: 75px;
+    position: absolute;
+    display: none;
+}
+.pokerResult{
+    position: absolute;
+    font-size: 20px;
+    color: #ffff00;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.6);
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 30px;
+    top: 35px;
+    left: 25px;
+
+}
+/*引用图片*/
+.qh_index{
+    background-image: url("../images/qh_zjh.png");
+    display: inline-block;
+}
+.l2r4{
+    width:16px;
+    height: 17px;
+    background-position: -107px -49px;
+}
+.l6r2{
+    width: 122px;
+    height: 53px;
+    background-position: -5px -380px;
+}
+.l6r3{
+   width: 122px;
+    height: 42px;
+    background-position: -140px -380px;
+}
+.border{
+    width: 2px;
+    position: absolute;
+}
+.l6r1{
+    width: 122px;
+    height: 53px;
+    cursor: pointer;
+    background-position: -232px -200px;
+}
+.l2r10{
+    width: 28px;
+    height: 28px;
+    background-position: -320px -49px;
+}
+.l2r1{
+    width: 29px ;
+    height: 26px;
+    background-position: 0px -49px;
+}
+.l2r2{
+    width: 25px;
+    height: 28px;
+    background-position: -37px -49px;
+}
+.l2r3{
+    width: 29px;
+    height: 28px;
+    background-position: -70px -49px;
+}
+/*大厅*/
+.l1r5{
+    width: 28px;
+    height: 30px;
+    position: absolute;
+    background-position: -185px 0px;
+    top: 18px;
+    cursor: pointer;
+    right: 5%;
+}
+.player{
+    position: absolute;
+    border-radius: 6px;
+    width: 86px;
+    height: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: 1px solid #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 999;
+    color: #ffd700;
+
+
+}
+#player3{
+    top: 18%;
+    left: 184px;
+}
+.p3Card{
+    top: 56px;
+    left: 120px;
+    width: 200px;
+    height: 80px;
+    position: absolute;
+
+}
+#player4{
+    top: 18%;
+    right: 184px;
+}
+#player5{
+    top: 55%;
+    right: 184px;
+}
+#player6{
+    top: 55%;
+    left: 184px;
+}
+#player1{
+    left: 0px;
+    right: 0px;
+    bottom: 12%;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 6px;
+    width: 165px;
+    height: 65px;
+    font-size: 15px;
+    font-weight: bold;
+   background-color:rgba(0,0,0,0.6);
+    border: 2px solid #ffbf1c;
+    z-index: 999;
+
+}
+#player1 .avatar{
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.avatar img{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+#player1 .avatar img{
+    height: 56px;
+    width: 56px;
+    border: 0;
+}
+.nickName{
+    position: relative;
+    left: 1px;
+    top: 2px;
+    color: #ffffff;
+    font-size: 14px;
+}
+#player1 .nickName{
+    color: #ffd700;
+    left: 15px;
+    top:1px;
+
+}
+#player1 .score{
+    position: absolute;
+    bottom: 15px;
+    color: #ffd700;
+          }
+.selfCard{
+    top: 240px;
+    left: -493px;
+    width: 170px;
+    height: 80px;
+    position: absolute;
+}
+#content{
+    position: absolute;
+    top: 11%;
+    bottom: 20%;
+    left: 15%;
+    right: 10%;
+    right: 5%;
+    width: 70%;
+    text-align: center;
+    border: 4px solid #bd6910;
+    border-radius: 178px;
+    -webkit-box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 0;
+    margin: 0;
+}
+.tableBorder{
+    position: relative;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+    -webkit-box-align:center;
+    box-align:center;
+    -webkit-box-pack:center;
+    box-pack:center;
+    text-align:center;
+    border: 26px solid #7e4115;
+    border-radius: 173px;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+.insideBorder{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    width: 99.4%;
+    height: 100%;
+    border-radius: 146px;
+    background-color: #218221;
+    border: 3px solid #000000;
+    box-shadow: 0px 0px 10px #000;
+}
+.borderLine{
+    position: absolute;
+    top:11%;
+    left: 8%;
+    width: 84%;
+    height: 80%;
+    border: 2px solid #ffffff;
+    border-radius: 105px;
+}
+#start{
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 900;
+    color: #ffffff;
+   line-height: 53px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cardsWrap{
+    position: absolute;
+    z-index: 999;
+    border-radius: 10px;
+    width: 340px;
+    height: 210px;
+    background-color: rgba(18,92,127,0.9);
+    top: -130px;
+    left: -90px;
+    display: none;
+}
+.bullTips{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+.ulCattle{
+    margin: 0;
+    padding: 0;
+    width:  100%;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+.ulCattle li{
+    width: 35px;
+    height: 100%;
+    display: block;
+    float: left;
+    font-size: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+.ulCattle li:nth-child(odd){
+    width: 36px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(255,255,255,0.4)inset;
+
+}
+.operateUI{
+    width: 100%;
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    height: 100px;
+    left: 23px;
+
+}
+#noShowDown{
+    line-height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
+#showDown{
+    line-height: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+#qhGameOver{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display:none;
+    -webkit-border-radius: 15px;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1200;
+
+}
+.sl{
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    right: 5%;
+    background-color: #082439;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    z-index: 1090;
+}
+.resultInfo{
+    position: relative;
+    top: 15px;
+    left: 1%;
+    right: 1%;
+    right: 1%;
+    width: 98%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+.uInfo{
+    position: relative;
+    top: 15px;
+    left: 1%;
+    right: 1%;
+    width: 98%;
+    margin-bottom: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #18659c;
+}
+.resultInfo>div{
+    color: #ffffff;
+    line-height: 42px;
+    height: 42px;
+    font-size: 20px;
+    display: inline-block;
+}

@@ -1,0 +1,23 @@
+cache manifest
+version:1.0
+cache:
+#images
+      images/bg.png
+      images/load.gif
+      images/qh_zjh.png
+      images/logo.png
+      
+    #common
+      asset/libs/libs.min.js
+    
+    #js
+       js/login.js
+       js/main.js
+       js/render.js
+       
+     #css
+       css/dn.css
+       
+     network:
+       *
+      #manifest应用缓存

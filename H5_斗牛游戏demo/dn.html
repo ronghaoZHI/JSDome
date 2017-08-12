@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>主页面</title>
+    <link rel="stylesheet" href="./css/dn.css">
+    <script type="text/javascript" src="./js/libs.min.js"></script>
+    <script type="text/javascript" src="js/helper.js"></script>
+    <script type="text/javascript"src="./js/main.js"></script>
+    <script type="text/javascript"src="js/render.js"></script>
+
+
+</head>
+<body>
+<div class="jb"></div>
+<!--登陆和注册页面-->
+<div id="qh_login_reg"class="page">
+    <!--登陆界面-->
+    <div id="qh_product_l">
+        <nav>
+            <div class="qhIcon">
+                <img src="images/nn_icon.png" alt="">
+            </div>
+            <span class="game_name">
+                斗牛
+                <div class="productCenter"></div>
+                <span style="font-size: 20px;">(HTML5版)</span>
+            </span>
+            <hr>
+            <span class="MPADesc" >Powered by Mobile Poker Association 2013</span>
+        </nav>
+        <div class="_h">
+            <p><input type="text" id="l_username" value="请输入用户名" class="qhInput" style="color: gray"></p>
+            <p><input type="text" id="l_userpwd" value="请输入密码" class="qhInput" style="color: gray"></p>
+
+            <p style="margin-top: 50px;"><button class="lr_button btns" id="l_login">登&nbsp;&nbsp;陆</button></p>
+        </div>
+        <div id="user_login">
+            <div class="button_btn" id="randUser">游客登录</div>
+            <div class="button_btn" id="l_register">快速注册</div>
+        </div>
+    </div>
+    <!--注册界面-->
+    <div id="qh_product_r">
+
+        <nav>
+            <div class="qhIcon">
+                <img src="images/nn_icon.png" alt="">
+            </div>
+            <span class="game_name">
+                斗牛
+                <div class="productCenter"></div>
+                <span style="font-size: 20px;">(HTML5版)</span>
+            </span>
+            <hr>
+            <span class="MPADesc" >Powered by Mobile Poker Association 2013</span>
+        </nav>
+        <div class="_h">
+            <p><input type="text" id="r_username" value="请输入用户名" class="qhInput" style="color: gray"></p>
+            <p><input type="text" id="r_userpwd" value="请输入密码" class="qhInput" style="color: gray"></p>
+            <p><input type="text" id="res_userpwd" value="请确认密码" class="qhInput" style="color: gray"></p>
+            <p style="margin-top: 50px;"><button class="lr_button btns" id="r_login">注&nbsp;&nbsp;册</button></p>
+        </div>
+        <div id="res_login">
+            <p style="margin-top: 50px;"><button class="lr_button btns" id="return_login">返回登陆</button></p>
+        </div>
+    </div>
+    <div class="lr_btn">
+        <div id="pc_ddress"></div>
+       
+    </div>
+
+</div>
+<!--大厅界面-->
+<div id="qh_join_game"class="page">
+    <div id="qh_header">
+        <div class="userInfo">
+            <img id ="indexPage_header" src="./images/logo.png">
+            <span id="indexPage_username">陈沛光</span>
+            <div class="qh_index l2r4" style="position: absolute;top:51px;left:79px; "></div>
+            <span class="qh_money">5000</span>
+
+        </div>
+        <a class="qh_index l6r2" id="quickStart"><span>快速开始</span></a>
+        <a class="qh_index l6r1 sx" id="indexPage_home"><span>注销</span></a>
+        </div>
+    <div id="qh_game_content">
+        <div class="qh_place">
+            <div class="pt">
+                <div class="game_songfen game_breakout game_breakout1 button_btn1" data-type="1">
+                    <div id="font">
+                        <span >大众场</span></div></br>
+                    <div id="font_l" >
+                        <span>底注: 10金币</span>
+                        <hr style="border: 0"> <span>最少携带:<span style="color: yellow">无限制</span></span></hr>
+                    </div>
+                    <div class="place_icon">
+                        <strong>众</strong>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pt">
+                <div class="game_chuji game_breakout game_breakout2 button_btn2" data-type="2">
+                    <div id="font_q">
+                        <span >精英场 &nbsp;&nbsp;Pro</span></div>
+                    <div id="font_w">
+                        <span >底注2000金币</span>
+                        <hr style="border: 0"><span>最少携带：<span style="color: yellow">5万金币</span></span></hr>
+                    </div>
+                    <div class="place_icon">
+                        <strong>精</strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="qh_place">
+            <div class="pb">
+                <div class="gamegaoji game_breakout game_breakout3 button_btn3" data-type="3">
+                    <div id="font_e">
+                        <span>火拼场</span></div>
+                    <div id="font_r">
+                        <span>底注：5000金币</span>
+                        <hr style="border: 0"><span>最少携带：<span style="color: yellow">50万金币</span></span></hr>
+                        <hr style="border: 0"><span>午间场：<span style="color: yellow">11:30-13:00</span></span></hr>
+                        <hr style="border: 0"><span>晚间场：<span style="color: yellow">21:10-22:40</span></span></hr>
+                        <hr style="border: 0px; margin: 0;height: 0;clear: both;border-bottom: 5px;border-width: 0;"><span>每天&nbsp;<span style="color: yellow">2 &nbsp;</span><span>场 &nbsp;&nbsp;</span><span>激情 &nbsp;</span><span style="color: yellow">90 &nbsp;<span>分</span></span> </span></hr>
+                    </div>
+                    <div class="place_icon">
+                        <strong>火</strong>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pb">
+                <div class="game_sss game_breakout game_breakout4 button_btn4" data-type="4">
+                    <div id="font_t">
+                        <span>随身赛</span> </div>
+                    <div id="font_y">
+                        <span>最少携带：<span style="color: yellow">2万金币</span></span>
+                        <hr style="border: 0">
+                        <hr style="border: 0"><span style="font-size: 20px;color: yellow ;font-weight: bold">专业赛事&nbsp;&nbsp;奖品丰厚</span>
+                    </div>
+                    <div class="place_icon">
+                        <strong>赛</strong>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="qhFooter">
+            <div class="box">
+                <a id="helper" class="qh_index l6r1 sx">
+                    <div class="qh_index l2r10 menuIcon"></div>
+                    <span>帮助</span>
+                </a>
+            </div>
+            <div class="box">
+                <a id="cash" class="qh_index l6r1 sx">
+                    <div class="qh_index l2r1 menuIcon"></div>
+                    <span>商城</span>
+                </a>
+            </div>
+            <div class="box">
+                <a id="activity" class="qh_index l6r1 sx">
+                    <div class="qh_index l2r3 menuIcon"></div>
+                    <span>活动</span>
+                </a>
+        </div>
+            <div class="box">
+                <a id="exchange" class="qh_index l6r1 sx">
+                    <div class="qh_index l2r2 menuIcon"></div>
+                    <span>奖品</span>
+                </a>
+    </div>
+
+   </div>
+</div>
+<!--打牌界面-->
+<div id="dnIndexPage"class="page">
+    <div id="header">
+        <div id="gameMain">
+            <div class="qh_index l1r5"></div>
+            <span>大厅</span>
+        </div>
+    </div>
+
+    <div id="player4"class="player">
+        <div class="nickName">nickName</div>
+        <div class="avatar">
+            <img src="images/logo.png">
+        </div>
+        <div class="qh_gold">
+            <span class="qh_index"></span>
+            <span class="score">5000</span>
+        </div>
+        <div class="selfCard"></div>
+    </div>
+    <div id="player3"class="player">
+        <div class="nickName">nickName</div>
+        <div class="avatar">
+            <img src="images/logo.png">
+        </div>
+        <div class="qh_gold">
+            <span class="qh_index"></span>
+            <span class="score">5000</span>
+        </div>
+        <div class="p3Card"></div>
+    </div>
+    <div id="player5"class="player">
+        <div class="nickName">nickName</div>
+        <div class="avatar">
+            <img src="images/logo.png">
+        </div>
+        <div class="qh_gold">
+            <span class="qh_index"></span>
+            <span class="score">5000</span>
+        </div>
+    </div>
+    <div id="player6"class="player">
+        <div class="nickName">nickName</div>
+        <div class="avatar">
+            <img src="images/logo.png">
+        </div>
+        <div class="qh_gold">
+            <span class="qh_index"></span>
+            <span class="score">5000</span>
+        </div>
+    </div>
+    <div id="content">
+        <div class="tableBorder">
+            <div class="insideBorder"></div>
+            <div class="borderLine">
+                <div id="container"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="player1"class="player">
+        <div class="nickName">chenpeiguang</div>
+        <div class="avatar">
+            <img src="images/logo.png">
+        </div>
+        <div class="qh_gold">
+            <span class="qh_index"></span>
+            <span class="score">500000</span>
+        </div>
+
+        <div class="cardsWrap"  id="cardWrap">
+            <div class="bullTips">
+                <ul class="ulCattle">
+                    <li class="num_poker1 num_poker"></li>
+                    <li>+</li>
+                    <li class="num_poker2 num_poker"></li>
+                    <li>+</li>
+                    <li class="num_poker3 num_poker"></li>
+                    <li>=</li>
+                    <li id="num_pokerSum"></li>
+                    <li id="txt_cattle" style="width: 70px"></li>
+                </ul>
+            </div>
+            <div class="operateUI">
+
+            </div>
+            <a class="qh_index l6r1"id="noShowDown">
+                <span>没牛</span>
+            </a>
+            <a class="qh_index l6r2"id="showDown">
+                <span>亮牌</span>
+            </a>
+        </div>
+    </div>
+    <a class="qh_index l6r2"id="start">
+        <span>准&nbsp;备</span>
+    </a>
+
+    <div id="qhGameOver">
+        <div class="sl">
+            <div class="resultInfo">
+                <div style="width: 20%">昵称</div>
+                <div class="qh_index l6r3 border"></div>
+                <div style="width: 15%">胜负</div>
+                <div class=" qh_index l6r3 border"></div>
+                <div style="width: 15%">埙益</div>
+                <div class="qh_index l6r3 border"></div>
+                <div style="width: 14%">牌型</div>
+                <div class="qh_index l6r3 border"></div>
+                <div style="width: 24%">总分数</div>
+            </div>
+            <div class="uInfo"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+</html>
